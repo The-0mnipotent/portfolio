@@ -1,528 +1,1030 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Arpit Singh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpit Singh</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/as.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/profile-pic.jpeg" alt="Arpit Singh" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Arpit Singh">Arpit Singh</h1>
+
+          <p class="title">Full Stack Developer | Ex-Jnuite</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:arpitsingh92741@gmail.com?subject=Let's%20Connect:%20Interested%20in%20Talking%20with%20You!&body=Hi%20Arpit,%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%20My%20name%20is%20[Your%20Name],%20and%20I%20wanted%20to%20reach%20out%20to%20express%20my%20interest%20in%20connecting%20with%20you.%20I%20recently%20came%20across%20your%20profile%20and%20was%20impressed%20by%20your%20background%20as%20a%20software%20engineer.%0D%0A%0D%0AAs%20someone%20with%20a%20passion%20for%20technology%20and%20a%20desire%20to%20broaden%20my%20professional%20network,%20I%20believe%20that%20connecting%20with%20experienced%20professionals%20like%20yourself%20can%20offer%20valuable%20insights%20and%20opportunities%20for%20collaboration.%0D%0A%0D%0AI%20would%20love%20to%20have%20a%20conversation%20with%20you%20and%20learn%20more%20about%20your%20work,%20experiences,%20and%20any%20advice%20you%20may%20have%20for%20someone%20starting%20out%20in%20the%20software%20engineering%20field.%0D%0A%0D%0AIf%20you're%20open%20to%20it,%20please%20let%20me%20know%20your%20preferred%20method%20of%20communication%20and%20a%20suitable%20time%20for%20a%20call%20or%20meeting.%20I%20look%20forward%20to%20hearing%20from%20you%20and%20hopefully%20connecting%20soon!%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards,"
+                class="contact-link">arpitsingh92741@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="ribbon"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="https://drive.google.com/file/d/1J9nfzbzpDc2c-YclcV-IeFa1N0oa-94a/view?usp=drivesdk"
+               target="_blank" class="contact-title">Resume</a>
+
+              <a href="https://drive.google.com/file/d/1J9nfzbzpDc2c-YclcV-IeFa1N0oa-94a/view?usp=drivesdk"
+                target="_blank"  class="contact-link">Take a look</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <!-- <p  class="contact-title">LinkedIn</p> -->
+              <a href="https://www.linkedin.com/in/contact-arpit-singh"  target="_blank" class="contact-title">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/contact-arpit-singh"  target="_blank" class="contact-link">contact-arpit-singh</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="https://github.com/The-0mnipotent"  target="_blank" class="contact-title">Github</a>
+              <a href="https://github.com/The-0mnipotent"  target="_blank" class="contact-link">Collaborate</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="code"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <a href="https://www.naukri.com/code360/profile/codetalk"   target="_blank" class="contact-title">Code-360</p>
+              <a href="https://www.naukri.com/code360/profile/codetalk"   target="_blank" class="contact-link">Check it out</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Delhi, India</address>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2000-02-16">Aug 31, 2001</time>
+            </div>
+
+          </li>
+
         </ul>
+
+        <div class="separator"></div>
+
+
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Arpit Singh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpeg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Arpit Singh</h1>
-        <p class="section__text__p2">FullStack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Aprit_Singh_Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/contact-arpit-singh/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/The-0mnipotent/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <!-- <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div> -->
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Current</h3>
-              <p>Full Stack Developer Intern <br />Octanet Services Pvt. Limited</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Previous Experience</h3>
-              <p>Tech Intern <br />Tech Swarm Pvt. Limited</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.Tech (Computer Science & Engineering)<br />Jawaharlal Nehru
-                University(New Delhi)
-              </p>
-            </div>
-          </div>
-          
-            <div class="about-containers">
-              <div class="details-container">
-                <p'>
-                  Highly motivated and skilled MERN stack developer starting in
-                  the world of web-development. Proficient in REACT, Nodejs, and
-                  MongoDB, I am Passionate, detail-oriented, and dedicated to
-                  excellence with Strong problem-solving and collaboration skills.
-                  Seeking a challenging opportunity to contribute impactful
-                  back-end solutions.
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello there! 👋 I'm Arpit Singh, a Full stack developer with a diverse background. I've had the privilege of working with several startups, including frontend and backend roles. 
+            During my journey, I've had the opportunity to create various projects, such as Hotel Booking Application, API intensive websites, and personal projects.
+          </p>
+
+          <p>
+            Outside of my professional life, I have a variety of interests. I enjoy doing Swimming,
+            running marathons, and working out at the gym.
+          </p>
+
+          <p>
+            I am passionate about creating innovative solutions and pushing the boundaries of
+            technology. I am constantly seeking opportunities to expand my knowledge and stay up-to-date with the latest
+            advancements in the field. With my strong technical skills, collaborative mindset, and dedication to
+            excellence, I am confident in my ability to contribute to the success of any software development team.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">My Interests</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Built websites during my internship at <b>Octanet and Coding Ninjas</b> using React, Vue, TailwindCss, Redux, Nodejs, MongoDB.
                 </p>
               </div>
-            </div>
-          <div class="text-container"></div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Tech stack</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML/CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
+            </li>
+            <li class="service-item">
 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TailwindCSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>REACT</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Redux(RTK)</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.js</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Firebase</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Socket.io</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          
-        </div>
-        <div class="about-containers"><div class="details-container">
-          <h2 class="experience-sub-title">Others</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Java</h3>
-                <p>Intermediate</p>
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-datascience.svg
+                " alt="design icon" width="40">
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Worked on Data Science and data visualisation aspects during my internship at TechSwarm.
+                </p>
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Linux</h3>
-                <p>Intermediate</p>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Developed some mini mobile application using React Native.
+                </p>
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JIRA</h3>
-                <p>Basic</p>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-broker.svg" alt="camera icon" width="40">
               </div>
-            </article>
-          </div>
-        </div></div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-4.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              MERNStay Application
-            </h2>
-            <p>
-              A sophisticated hotel booking application allowing users to smoothly explore and reserve hotels.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/The-0mnipotent/MERNStay', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://mernstay.onrender.com/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Property Pulse Website
-            </h2>
-            <p>
-              MERN property search & listing with Google OAuth, enabling secure
-              CRUD operations for user profiles & listings.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick= "window.open('https://github.com/The-0mnipotent/property-pulse', '_blank')"       >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://property-pulse-j5a2.onrender.com', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Movie Mania</h2>
-            <p>
-              An API-driven movie website showcasing TMDB database in an elegant
-              & user-friendly manner
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/The-0mnipotent/Movix', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://arpit-movie-mania.netlify.app/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Book Phile Website
-            </h2>
-            <p>
-              A user-driven platform for book reviews and discussions where
-              users can share reviews for existing books and add new book
-              listings.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/The-0mnipotent/BookPhiles', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://arpit-bookphile.netlify.app/', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:arpitsingh92741@gmail.com"
-              >arpitsingh92741@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/contact-arpit-singh/" target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Messaging brokers</h4>
+
+                <p class="service-item-text">
+                  Experienced utilizing RabbitMQ for the purpose of scheduling emails for AMPQ (Advanced Message Queuing
+                  Protocol) messages.
+                </p>
+              </div>
+
+            </li> -->
+
           </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials (Todo)
+        -->
+
+        
+
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/logo.png" alt="Arpit Singh" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Arpit Singh</h4>
+
+
+              <div data-modal-text>
+                <p>
+                  Arpit is a great guy to work with.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-      </nav>
-      <p>
-        Copyright &#169; 2024 Arpit Singh. To use this template, fork repo @
-        <u><a href="https://github.com/The-0mnipotent/portfolio" target="_blank">Github </a></u>
-      </p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Experiences</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://octanet.in/" target="_blank">
+                <br><br>
+                <img src="./assets/octanet.png" width="150px" height="100px" alt="octanet">
+              </a>
+            </li>
+
+            <li class="clients-item coding-ninjas">
+              <a href="https://www.codingninjas.com/" target="_blank">
+                <br><br><br><br>
+                <img src="./assets/codingninjas.png" width="150px" height="150px" alt="codingninjas">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://swarm.space/" target="_blank">
+                <br><br>
+                <img src="./assets/tech-swarm.jpeg" width="100px" height="100px" alt="techswarm">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- Received Offers From (TODO) -->
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase" class="experience-icon"></ion-icon>
+
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <!-- <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">IOTric </h4>
+              <h4 class="h4 timeline-item-title"></h4>
+
+              <span>Fullstack developer | September 2022 – January 2023</span>
+
+              <p class="timeline-text">
+              <ul class="white-dot">
+                <li>Worked on several core projects including white label sdk, healtcare monitoring system, DTlds selling system, DNS-Dao system etc</li>
+                <li>Made a mvp product for DNS-Dao from scratch using chakra ui with extended theme.</li>
+                <li>Made a admin panel which white-labels nexbloc and it is used by vetcoin with multilayer microservices multitenancy backend
+architecture. Made organizations status feature, jump on any organization page view which contains useful insights, api key generation
+page, premim domains page etc. Added toasts, yup resolver and integrated the onboarding flow with pusher and pusher beams.</li>
+                <li>Followed agile methodology on every project with tools used gitlab, github, slack, postman, skype, clickup, zoho, swagger, notion, figma,
+miro etc</li>
+              </ul>
+
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">KYRON - MIDAS, IIIT Delhi  </h4>
+              <h4 class="h4 timeline-item-title"></h4>
+
+              <span>Research Intern | February 2022 – March 2022</span>
+
+              <p class="timeline-text">
+              <ul class="white-dot">
+               <li>A hiring platform where you can create tests, give tests, proctor tests, assign tests, delete tests, and Remodelled the entire user interface
+with tailwindcss from scratch.</li>
+               <li>Till now 5+ companies ( including adobe) have successfully conducted their recruitment test on our platform</li>
+               <li>Worked on Separate features for three different users e.g Admin, teacher, and Student. Added user form, Google Auth2.0 and JWT
+authentication.</li>
+               <li>Integrated MIDAS Code Editor in KYRON with an improved user interface.</li>
+               <li>Closely worked on question creator tool and Added features like Random shuffling, filtering, and navigation.</li>
+              </ul>
+
+              </p>
+            </li> -->
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Octanet Services Private Limited </h4>
+              <h4 class="h4 timeline-item-title"></h4>
+
+              <span>Full Stack developer Intern | January 2024 – March 2024</span>
+
+              <p class="timeline-text">
+              <ul class="white-dot">
+               <li>Contributed to diverse projects, such as a hotel booking app, gaining experience in various technological skills applicable in real-world scenarios.</li>
+               <li>Demonstrated proficiency in developing and executing comprehensive test cases to ensure the functionality of websites. Acquired expertise in API setup and maintenance across various data types.</li>
+               <li>Cultivated a comprehensive understanding of web development processes through hands-on experience, encompassing frontend and backend system management, testing procedures, and successful design implementation.</li>
+             
+              </ul>
+
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4></h4><a href="http://soe.jnu.ac.in/home" class="h4 timeline-item-title"><b>Jawaharlal Nehru University</b> </a></h4>
+
+              <span>2019-2023</span>
+              <p class="timeline-text">B.Tech in CSE 
+              <p class="timeline-text">
+                <br>
+              <p class="timeline-text">
+              <ul class="white-dot">
+                <li>Pursued B.Tech in Computer Science Engineering from college.</li>
+                <!-- <li>Pursued MS in Computational Biology from college.</li> -->
+                <li>Proficient in subjects such as Data Science, Object-Oriented Programming, Operating Systems,
+                  Computer Networks, Computer Architecture, and Database Management Systems.</li>
+                <li>Recognized as one of the top coders in my institute.</li>
+                <li>Actively participated in hackathons and coding competitions.</li>
+                <li>Engaged in extracurricular activities, including badminton tournaments, quiz competitions, and debate
+                  competitions.</li>
+              </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4><a href="www.yashwantpublicschool.org" class="h4 timeline-item-title"><b>Yashwant Public Hr Secondary School</b> </a>
+              </h4>
+              <span>2017-2019</span>
+              <p class="timeline-text">Higher Secondary Education | 82% </p>
+              <br>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4><a href="https://ecare.rajeshwarmhow.com/app/login" class="h4 timeline-item-title"><b>Rajeshwar Hr Secondary School</b> </a>
+              </h4>
+              <span>2015-2017</span>
+              <p class="timeline-text">Primary and Secondary Education | 9.6 CGPA </p>
+              <br>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="skill">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school" class="experience-icon"></ion-icon>
+            </div>
+            <h3 class="h3 skills-title">My skills</h3>
+          </div>
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">App Development</h5>
+                <data value="70">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning and Data Science</h5>
+                <data value="50">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA</h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <h4 class="h4 timeline-item-title">Other Skills </h4>
+            <ul class="white-dot inline-list">
+
+              <li>Java  </li>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>Linux</li>
+             
+
+            </ul>
+          </ul>
+
+        </section>
+        <br>
+        <section class="skill">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book" class="experience-icon"></ion-icon>
+            </div>
+            <h3 class="h3 skills-title">Coursework</h3>
+          </div>
+          <ul class="skills-list content-card">
+
+            <ul class="white-dot">
+
+              <li>Data Structures</li>
+              <li>Object Oriented Programming Language</li>
+              <li>Operating Systems</li>
+              <li>Database Management System</li>
+              <li>Data Science</li>
+              <li>Computer Networking</li>
+              <li>Machine Learning</li>
+            </ul>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section>
+
+
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Options for future</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+
+
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://mernstay.onrender.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/project-1.png" alt="Stock Market" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MERNStay Application</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://property-pulse-j5a2.onrender.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/project-2.png" alt="QnA" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Property Pulse</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://arpit-movie-mania.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/project-3.png" alt="QnA" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Movie Mania</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://arpit-bookphile.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/project-4.png" alt="QnA" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bookphile</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://github.com/The-0mnipotent">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/github.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Other projects on Github</h3>
+                <p class="project-category">Various Other Skills</p>
+
+
+              </a>
+            </li>
+
+            <!-- TeachTok (TODO) -->
+
+          </ul>
+
+        </section>
+        <br>
+      
+      </article>
+
+
+
+
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="certifications">
+
+        <header>
+          <h2 class="h2 article-title">Work</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <!-- add iotric -->
+            <li class="blog-post-item">
+              <a target="_blank" href="https://ninjasfiles.s3.amazonaws.com/certificate_67cec0396accd860_f3f9511fbd11e217bb98fff5a07efeba.pdf">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/certificate-1.png" alt="Frontend" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Frontend Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">July 2023 – September 2023</time>
+                  </div>
+
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- add kyron -->
+            <li class="blog-post-item">
+              <a target="_blank" href="https://ninjasfiles.s3.amazonaws.com/certificate_d5d34d7b096cbec3_479503feb0fe6d959cf049bc693d2ffd.pdf">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/certificate-2.png" alt="Backend Development" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Backend Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September 2022 – November 2022</time>
+                  </div>
+
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- add upskool -->
+            <li class="blog-post-item">
+              <a target="_blank" href="https://ninjasfiles.s3.amazonaws.com/certificate_1bd7b28889ae97d5_ec583d59be76a3b35f789112d2c4c23d.pdf">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/certificate-3.png" alt="react" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">React Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">November 2022–February 2023</time>
+                  </div>
+
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+          
+          </ul>
+
+        </section>
+
+        <!-- Certifications (TODO) -->
+  
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <div class="mapbox">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=1IsmAwojtjq-_82lC7K1OtZkc7ZM&hl=en&ehbc=2E312F">
+              </iframe>
+              
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 424px;
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 424px;
+              }
+
+              .gmap_iframe {
+                height: 424px !important;
+              }
+            </style>
+          </div>
+
+        </section>
+
+        <header>
+          <h2 class="h2 article-title">Let's Connect</h2>
+        </header>
+        <section>
+          <div class="container">
+            <div class="column">
+              <a
+                href="mailto:arpitsingh92741@gmail.com?subject=Exciting%20Opportunity:%20Join%20Our%20Team%20and%20Connect!&body=Dear%Arpit,%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%20I%20recently%20came%20across%20your%20impressive%20profile%20as%20a%20software%20engineer,%20and%20I%20must%20say,%20your%20experience%20and%20skills%20caught%20our%20attention.%0D%0A%0D%0AWe%20are%20always%20on%20the%20lookout%20for%20talented%20professionals%20like%20yourself%20who%20can%20contribute%20to%20our%20dynamic%20team.%20We%20believe%20that%20your%20expertise%20aligns%20perfectly%20with%20our%20company's%20goals%20and%20vision.%20After%20thoroughly%20reviewing%20your%20work%20and%20accomplishments,%20we%20are%20genuinely%20interested%20in%20connecting%20with%20you%20to%20discuss%20potential%20opportunities.%0D%0A%0D%0AWe%20admire%20your%20passion%20for%20software%20engineering%20and%20the%20exceptional%20projects%20you%20have%20undertaken.%20Our%20company%20values%20individuals%20who%20are%20motivated,%20innovative,%20and%20constantly%20seeking%20to%20push%20the%20boundaries%20of%20technology.%20We%20believe%20that%20you%20possess%20these%20qualities,%20and%20we%20would%20love%20to%20have%20you%20join%20our%20team.%0D%0A%0D%0AIf%20you%20are%20open%20to%20exploring%20new%20career%20prospects,%20we%20would%20be%20delighted%20to%20schedule%20a%20conversation%20with%20you%20at%20your%20convenience.%20We%20would%20like%20to%20discuss%20the%20exciting%20projects%20we%20are%20working%20on,%20as%20well%20as%20the%20opportunities%20for%20professional%20growth%20and%20development.%0D%0A%0D%0APlease%20let%20me%20know%20if%20you%20are%20interested%20in%20connecting,%20and%20we%20can%20arrange%20a%20call%20or%20a%20meeting.%20I%20am%20confident%20that%20our%20discussion%20will%20provide%20you%20with%20valuable%20insights%20into%20the%20possibilities%20that%20lie%20ahead.%0D%0A%0D%0AThank%20you%20for%20considering%20this%20opportunity.%20We%20eagerly%20await%20your%20response%20and%20the%20chance%20to%20connect%20with%20you%20further.%20If%20you%20have%20any%20questions%20in%20the%20meantime,%20please%20do%20not%20hesitate%20to%20reach%20out.%0D%0A%0D%0AWarm%20regards,">
+                <div class="icon-box-mail">
+                  <i class="ion ion-email"></i> &nbsp;&nbsp;Mail
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <header>
+          <br>
+          <h2 class="h2 article-title">Also View</h2>
+        </header>
+        <section>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+
+              <li class="blog-post-item">
+                <a href="https://www.linkedin.com/in/contact-arpit-singh/">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/LinkedIn.png" alt="LinkedIn" loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">LinkedIn</p>
+
+                      <span class="dot"></span>
+
+                      <p class="blog-category">contact-arpit-singh</p>
+                    </div>
+
+
+                  </div>
+
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="https://www.naukri.com/code360/profile/codetalk">
+
+                  <figure class="blog-banner-box">
+                    <img src="./assets/code360.png" alt="Code360" loading="lazy">
+                  </figure>
+
+                  <div class="blog-content">
+
+                    <div class="blog-meta">
+                      <p class="blog-category">Code360</p>
+
+                      <span class="dot"></span>
+
+                      <p class="blog-category">codetalk</p>
+                    </div>
+
+
+                  </div>
+
+                </a>
+              </li>
+          </section>
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
