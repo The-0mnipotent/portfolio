@@ -11,8 +11,8 @@ This is a portfolio web application built using HTML and CSS. It highlights my a
  
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/portfolio-web-app.git`
-2. Navigate to the project directory: `cd portfolio`
+1. Clone the repository: `git clone https://github.com/The-0mnipotent/portfolio.git`
+2. Navigate to the project directory: `cd portfolio-main`
 3. Open `index.html` in your preferred web browser.
 
 ## Usage
