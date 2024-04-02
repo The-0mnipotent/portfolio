@@ -1,6 +1,6 @@
 # CV
 
-This is a portfolio web application built using HTML and CSS. It highlights my academic and professional accomplishments.<a href="https://yashpatwaportfolio.netlify.app/">View the website</a>
+This is a portfolio web application built using HTML and CSS. It highlights my academic and professional accomplishments.<a href="https://arpit-singh.netlify.app/">View the website</a>
 
 ## Features
   
@@ -12,7 +12,7 @@ This is a portfolio web application built using HTML and CSS. It highlights my a
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/your-username/portfolio-web-app.git`
-2. Navigate to the project directory: `cd portfolio-web-app`
+2. Navigate to the project directory: `cd portfolio`
 3. Open `index.html` in your preferred web browser.
 
 ## Usage
